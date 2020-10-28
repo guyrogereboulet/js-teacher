@@ -29,6 +29,14 @@ console.log(a);
 
 //Lavorazione con funzioni di ordine superiori
 
+/*Questa procedura fa la stessa cosa di quella precedente, con diversi vantaggi:
+
+- Meno possibilità di errori
+- Maggiore leggibilità del codice
+- Tempi più rapidi sviluppo
+
+*/
+
 let b = [1,2,3,4,5];
 console.log(b.reverse());
 
