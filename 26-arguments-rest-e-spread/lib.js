@@ -27,9 +27,56 @@ la funzione in questione li ignora*/
 calcola(10,20,30,40,50);
 
 
+let minimo = Math.min(10,20,30,1,0.2);
+console.log(minimo);
 
 
 
+//Operatore REST
+
+/*
+In fase di definizione della funzione mettiamo negli argomenti ".." e un identificatore come ad esempio "numeri".
+*/ 
+function somma (... numeri) {
+
+    // console.log(numeri);
+    let result = 0;
+
+    for (numero of numeri) {
+        result += numero;
+    }
+
+    console.log(result);
+}
+
+somma(10,20,30,40,50,33);
+
+
+//Altrimenti possiamo usare anche questo metodo
+function logParam(param1, param2, ...numeri) {
+
+    console.log(param1);
+    console.log(param2);
+    console.log(numeri);
+
+}
+
+
+logParam(1,2,3,4,5,6);
+
+
+
+//Spread operator => "..."
+let c = [10,20,30,0.1,0.36]
+//Senza lo spread operator non posso accedere agli elementi dell'array
+let minimo2 = Math.min(...c);
+console.log(minimo2);
+//Con questo operatore si possono pure unire gli array
+let array1 = [1,2,3];
+let array2 = [4,5,6];
+let array3 = [...array1,...array2];
+
+console.log(array3);
 
 
 
