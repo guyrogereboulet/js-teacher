@@ -35,7 +35,7 @@ console.log(minimo);
 //Operatore REST
 
 /*
-In fase di definizione della funzione mettiamo negli argomenti ".." e un identificatore come ad esempio "numeri".
+In fase di definizione della funzione mettiamo negli argomenti "..." e un identificatore come ad esempio "numeri".
 */ 
 function somma (... numeri) {
 
