@@ -1,35 +1,47 @@
-//Le constructor function sono in pratica delle funzioni produttrici di oggetti, oggetti che andranno ad ereditare proprietà e metodi definiti all'interno dell'oggetto prototype della constructor function
+//Le funzioni pure e inpure sono un concetto fondamentale nella programmazione funzionale
 
-function User() {
+/*
+Javascript è un linguaggio multiparadigma che supporta sia la programmazione funzionale che quella orientata ad oggetto
 
-    //Per farsi che ogni "new User", abbia una copia delle proprietà definiti nella function Constructor "User" dobbiamo usare il "this"
 
-    this.name = "";
-    this.age = null;
-    // Seil valore di una proprietà sarà la stesso, non ha senso definirlo con il this.
+Nella Programmazione Funziona (FP)
+Una funzione dipende solo dai suoi dati in Input, questo tipoi di funzione è chiamata "Funzione deterministica"
+
+*/
+
+// Funzione  inpura deterministica
+
+
+// function calcola(a, b, c) {
     
-    // this.type = "utente Standard";
+//     console.log(`Effettuo la somma tra ${a}, ${b} e ${c}.`);
+//     let somma = a + b + c;
+//     return somma
+// }
+
+// Se nell'input della funzione diamo sempre gli stessi parametri l'output sarà sempre lo stesso indipendentemente dal punto in cui invochiamo la funzione
+// console.log(calcola(1,2,3));
+
+// Funzione inpura non deterministica
+
+// In questo caso la funzione non si basa solamante sui dati in input ma anche sui dati della variabile esterna "somma", e quindi l'output può cambiare in base a quando viene invovcata la funzione
+
+// let somma = 0;
+// function calcola(a, b, c) {
+    
+//     console.log(`Effettuo la somma tra ${a}, ${b} e ${c}.`);
+//     somma = a + b + c;
+// }
+
+//Funzione Pura
+
+//Una funzione per essere definita pura non deve produrre effetti collaterali nel mondo esterno, invocare per esempio il 'console.log' vuol dire che viene mostrata un informazione e questo è un effetto collaterale
+
+//Modifichiamo il codice per rendere la funzione "calcola" pura:
+
+function calcola(a,b,c) {
+    let somma = a + b +c;
+    return somma;
 }
 
-// è più efficente fare ereditare tale proprietà con il metodo prototype
-User.prototype.type = "utente Standard";
-
-let user1 = new User();
-let user2 = new User();
-let user3 = new User();
-
-//in questo modo riusciamo ad accedere alla proprietà type definita sull'oggetto prototype 
-// console.log(user1.type);
-// console.log(user2.type);
-
-
-//Se facciamo un console log delle oggetto, vediamo che l'oggetto si è riempito delle propietà defdinite in precedenza
-
-console.log(user1);
-console.log(user2);
-
-user1.name = "Guy";
-user2.name = "Gianluca";
-
-console.log(user1);
-console.log(user2);
+let sum = calcola(1,2,3)
