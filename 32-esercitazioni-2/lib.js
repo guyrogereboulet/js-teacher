@@ -17,6 +17,10 @@ function maxString(str) {
         /*
 
         condizione ? espressione1 : espressione2
+
+        ? => ritorniamo
+
+        : => altrimenti
         
         */
         
@@ -52,7 +56,60 @@ function esponente (x, n) {
 
 // 3) Scrivere una funzione che ritorna una stringa casuale di n caratteri
 
+// Dichiaramo una variabile con tutti i caratteri
+let caratteri ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+function generateString(n) {
+    let result = ' ';
+    let lunghezza = caratteri.length;
+    for ( let i = 0; i < n; i++ ) {
+        result = result + caratteri.charAt(Math.floor(Math.random() * lunghezza));
+    }
+
+    return result;
+}
+
+
+console.log(generateString(5));
+
 
 
 
 // 4) Scrivere una funzione che inverte il contenuto di una stringa
+
+
+// function invertiStringa(stringa) {
+//     let arrayStringa = stringa.split(' ');
+//     let arrayVuoto = [];
+    
+//     for( var i = arrayStringa.length - 1; i >= 0; i-- ) {
+
+//         arrayVuoto.push(arrayStringa[i]);
+        
+        
+//     }
+    
+//     console.log(arrayVuoto.join(' '));
+
+    
+
+//     return arrayVuoto ;
+// }
+
+
+
+// let res = invertiStringa("Io sono una mamma");
+
+// console.log(res);
+
+
+function invertiStringa(stringa) {
+    return stringa.split(' ').reverse().join(" ");
+} 
+
+let invertita = invertiStringa("Mi chiamo Guy");
+
+console.log(invertita);
+
+
+
