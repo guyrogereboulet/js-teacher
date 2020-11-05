@@ -1,6 +1,6 @@
 /* All'interno di un oggetto, le variabili prendono il nome di "Proprietà" e le funzioni il nome di "Metodi"
 
-I 4 pilastri della Programmagione orientata a gli oggetti sono:
+I 4 pilastri della Programmazione orientata a gli oggetti sono:
 
 // INCAPSULAMENTO
 -vuol dire racchiudere in una capsula, quindi raggruppare dati e funzioni tra loro correlati.
