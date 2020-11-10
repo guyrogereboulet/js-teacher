@@ -61,7 +61,7 @@ let Chat = (function () {
 // Chat.init("casa");
 
 /*
-Non possiamo accedere alle funzioni della variabile "App" possiamo accedere solamente allo oggerro restituito dalla IIFE "return", è come le se le funuzioni siano private quindi non accessibili all'esterno mentre dentro il "return" ci sono le uniche informazioni pubbliche accessibili dall'esterno.
+Non possiamo accedere alle funzioni della variabile "App" possiamo accedere solamente allo oggetto restituito dalla IIFE "return", è come le se le funuzioni siano private quindi non accessibili all'esterno mentre dentro il "return" ci sono le uniche informazioni pubbliche accessibili dall'esterno.
 
 
 */ 
