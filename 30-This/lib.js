@@ -6,7 +6,7 @@ function User() {
 
     this.name = "";
     this.age = null;
-    // Seil valore di una proprietà sarà la stesso, non ha senso definirlo con il this.
+    // Se il valore di una proprietà sarà la stesso, non ha senso definirlo con il this.
     
     // this.type = "utente Standard";
 }
