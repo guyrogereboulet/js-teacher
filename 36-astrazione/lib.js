@@ -24,9 +24,11 @@ console.log(User.prototype);
 let user1 = new User("Simone", 175);
 //Accediamo alla funzione CalcolaPesoIdeale
 console.log(user1.CalcolaPesoIdeale());
-
+//Non poossiamo accedere alla variabile "privata", ci verrà restituito undifined
+console.log(user1.privata);
 //Non possiamo accedere alla proprietà "privata" perché non è una funzione
 console.log(user1.pesoIdeale());
+
 
 
 
