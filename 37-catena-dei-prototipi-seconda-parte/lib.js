@@ -11,9 +11,31 @@ ferrari_458.cavalli = 680;
 
 let ferrari_458_special = Object.create(ferrari_458);
 
-ferrari_458_special.colore ="nero";
-
+console.log(ferrari_458_special.cavalli);
 console.log(ferrari_458_special.colore);
+console.log(ferrari_458_special.cerchi);
+
+let obj = {};
+console.log(Object);
+
+
+
+/*
+
+Nella Catena dei prototipi abbiamo:
+1)  null
+2) Object.prototype
+3) ferrari
+4) ferrari_458
+5) ferrari_458_special
+
+
+*/
+
+
+
+
+
 
 
 
