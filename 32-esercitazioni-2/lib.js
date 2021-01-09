@@ -104,7 +104,7 @@ console.log(generateString(5));
 
 
 function invertiStringa(stringa) {
-    return stringa.split(' ').reverse().join(" ");
+    return stringa.split(' ').reverse().join("");
 } 
 
 let invertita = invertiStringa("Mi chiamo Guy");
