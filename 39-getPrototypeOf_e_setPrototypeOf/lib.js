@@ -17,6 +17,7 @@ Nella Catena dei prototipi abbiamo:
 // console.log(obj.__proto__ == Object.prototype);
 
 //Commit
+//commit
 
 
 function Ferrari () {
